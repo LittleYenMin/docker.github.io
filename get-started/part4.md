@@ -409,6 +409,9 @@ like [Git Bash](https://git-for-windows.github.io/){: target="_blank" class="_"}
 
 You can access your app from the IP address of **either** `myvm1` or `myvm2`.
 
+> notice: In [Part 3](part3.md) our docker-compose.yml make the port mapping 4000:80
+you may need access by the IP address:4000 to visit your docker cluster.
+
 The network you created is shared between them and load-balancing. Run
 `docker-machine ls` to get your VMs' IP addresses and visit either of them on a
 browser, hitting refresh (or just `curl` them).
